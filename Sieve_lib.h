@@ -7,6 +7,9 @@
 #include <math.h>
 #include <stdbool.h>
 
+// Constants
+#define MAX_SIZE 9999999
+
 
 // Function Prototypes
 
@@ -48,7 +51,7 @@ int read_maximum();
  * Function output/returned: none
  * Dependencies: none
  **/
-void calculate(int* zero_to_n_array, int* primes_array);
+void calculate(int maximum, bool* primes_array);
 
 /**
  * Name: list_primes
@@ -58,6 +61,6 @@ void calculate(int* zero_to_n_array, int* primes_array);
  * Function output/returned: none
  * Dependencies: none
  **/
-void list_primes(int* primes_array)
+void list_primes(bool* primes_array, int maximum);
 
 #endif
